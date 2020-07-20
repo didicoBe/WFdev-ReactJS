@@ -1,0 +1,211 @@
+.tamanhoProj{
+    margin-top: 30px;
+}
+
+.appmobile{
+    border: 3px solid #eb7ba1;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 270px;
+    color: #eb7ba1;
+    margin-right:25px;
+}
+.sites{
+    border: 3px solid #a1488f;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 270px;
+    color: #a1488f;  
+}
+.lojaVirtual{
+    border: 3px solid #592d66;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 270px;
+    color: #592d66;  
+    margin-right:25px;
+}
+.sis{
+    border: 3px solid #eb7ba1;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 270px;
+    color: #eb7ba1;  
+}
+
+.imgCx{
+    justify-content: center;
+    margin: auto;
+    padding: 15px;
+}
+
+.btnCx{
+    background-color: #eb7ba1;
+    border-color: #eb7ba1;
+    width: 100%;
+}
+
+.btnCxSite{
+    background-color: #a1488f;
+    border-color: #a1488f;
+    width: 100%;
+}
+
+.btnCxLoja{
+    background-color: #592d66;
+    border-color: #592d66;
+    width: 100%;
+    margin-top: 17px;
+}
+
+.btnCxSis{
+    background-color: #eb7ba1;
+    border-color: #eb7ba1;
+    width: 100%;
+}
+
+
+.btnCx:hover {
+    background-color: #d86088;
+    border-color: #d86088;
+    width: 100%;
+}
+.btnCx:focus {
+    background-color: #d86088;
+    border-color: #d86088;
+    width: 100%;
+    box-shadow: 0 0 0 0.2rem rgb(255 38 178 / 50%);
+}
+.btnCx:active {
+    background-color: #d86088 !important;
+    border-color: #d86088 !important;
+    width: 100%;
+    
+}
+
+
+
+.btnCxSite:hover {
+    background-color: #5f2252;
+    border-color: #5f2252;
+    width: 100%;
+}
+.btnCxSite:focus {
+    background-color: #5f2252;
+    border-color: #5f2252;
+    width: 100%;
+    box-shadow: 0 0 0 0.2rem rgb(166 9 247 / 50%);
+}
+.btnCxSite:active {
+    background-color: #5f2252 !important;
+    border-color: #5f2252 !important;
+    width: 100%;
+    
+}
+
+
+.btnCxLoja:hover {
+    background-color: #ab5298;
+    border-color: #ab5298;
+    width: 100%;
+}
+.btnCxLoja:focus {
+    background-color: #ab5298;
+    border-color: #ab5298;
+    width: 100%;
+    box-shadow: 0 0 0 0.2rem rgb(166 9 247 / 50%);
+}
+.btnCxLoja:active {
+    background-color: #ab5298 !important;
+    border-color: #ab5298 !important;
+    width: 100%;
+    
+}
+
+
+
+
+.btnCxSis:hover {
+    background-color: #d44777;
+    border-color: #d44777;
+    width: 100%;
+}
+.btnCxSis:focus {
+    background-color: #d44777;
+    border-color: #d44777;
+    width: 100%;
+    box-shadow: 0 0 0 0.2rem rgb(236 135 169);
+}
+.btnCxSis:active {
+    background-color: #d44777 !important;
+    border-color: #d44777 !important;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+.linha1{
+    display: flex;
+    height: 325px;
+    margin-left: -110px;
+}
+.linha2{
+    margin-top: 25px;
+}
+
+
+
+
+
+/* mobile */
+
+
+.appmobileM{
+    border: 3px solid #eb7ba1;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 180px;
+    color: #eb7ba1;
+    position: relative;
+    margin-left: -55px;
+    margin-top: 115px;
+    margin-bottom: 20px;
+
+}
+.sitesM {
+    border: 3px solid #a1488f;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    margin-left: -78px;
+    margin-top: 35px;
+    max-width: 180px;
+    color: #a1488f;
+}
+
+.lojaVirtualM {
+    border: 3px solid #592d66;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 180px;
+    position: relative;
+    color: #592d66;
+    margin-left: -280px;
+    margin-top: -262px;
+}
+
+.sisM {
+    border: 3px solid #eb7ba1;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 180px;
+    color: #eb7ba1;
+    position: relative;
+    margin-left: -250px;
+    top: 35px;
+}

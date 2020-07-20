@@ -1,0 +1,44 @@
+.linkTopo{
+    color: #60316e !important;
+    font-size: 26px;
+}
+.linkTopoAtiv{
+    color: #eb5d8d !important;
+    font-size: 26px;
+}
+.fundoTopo{
+    background-color: #ffffff;
+}
+a{
+    color: #60316e;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 70px;
+    width: 150px;
+}
+.marginDesk{
+    margin-left: 3rem; 
+}
+.tamanhoP{
+    width: 100px;
+}
+.navbar-toggler {
+    border-color: #FFFfff !important;
+    line-height: 2!important;
+}
+
+.navbar-toggler-icon{
+    background-image:url("/img/toggle.png") !important;
+}
+
+button:focus {
+    outline:none;
+    outline: none;
+}
+
+
+
+
+

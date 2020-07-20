@@ -1,0 +1,62 @@
+.tamanho{
+    margin-top: -100px;
+    width: 780px;
+}
+.topoM{
+    margin-top: 100px;
+}
+.texto1{
+    position: relative;
+    top:240px;
+    left: 10px;
+    color:#cb6666;
+    font-size: 36px;
+}
+.texto2{
+    position: relative;
+    top:230px;
+    left: 60px;
+    color:#cb6666;
+    font-size: 36px;
+}
+.icones{
+    position: relative;
+    top: 260px;
+    left: 70px;
+}
+
+
+
+
+/* mobi */
+
+/* mobi */
+.texto1Mobi{
+    color: #cb6666;
+    font-size: 26px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.texto2Mobi{
+    color: #cb6666;
+    font-size: 26px;
+    margin-left: 125px;
+    margin-top: 5px;
+}
+.tamanhoMobi{
+    margin-top: -50px;
+}
+.iconesMobi{
+    margin-left: 60px;
+    margin-right: 70px;
+}
+.chev{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 100px;
+    width: 25px;
+}
+.proximo{
+    
+}

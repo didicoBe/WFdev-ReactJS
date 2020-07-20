@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Lottie from 'lottie-react-web';
+import animation from './animations/drawkit5.json'
+
+
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+import Topo from "./components/topo";
+import Home from "./components/home";
+import Sobre from "./components/sobre";
+import Proj from "./components/proj";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Topo/>
+        <Home/>
+        <Sobre/>
+        <Proj/>
+        
+       
     </div>
   );
 }
