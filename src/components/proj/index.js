@@ -8,7 +8,7 @@ import "./style.css"
 export default class Proj extends Component {
     render() {
         return (
-            <div>
+            <div className="espaco">
                {/* desk */}
                <Container className="d-none d-lg-block">
                     <Row>

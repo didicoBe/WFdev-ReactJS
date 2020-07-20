@@ -11,6 +11,10 @@ import Topo from "./components/topo";
 import Home from "./components/home";
 import Sobre from "./components/sobre";
 import Proj from "./components/proj";
+import Orcamento from "./components/orcamento";
+import Contato from "./components/contato";
+import Footer from "./components/footer";
+
 
 
 function App() {
@@ -20,8 +24,9 @@ function App() {
         <Home/>
         <Sobre/>
         <Proj/>
-        
-       
+        <Orcamento/>
+        <Contato/>
+        <Footer/>
     </div>
   );
 }
