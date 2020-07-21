@@ -9,7 +9,7 @@ import "./style.css"
 export default class Sobre extends Component {
     render() {
         return (
-            <div>
+            <div id="sobre">
                 {/* desk */}
                 <Container className="d-none d-lg-block">
                     <Row>

@@ -17,3 +17,27 @@
     margin-top: 115px;
     text-align: end;
 }
+
+
+/* mobile */
+.tamanhoCttMobile{
+    max-width: 400px;
+    margin-top: 25px;
+}
+
+.textoCtt1Mobi{
+    color: #60316e;
+    font-size: 12px;
+}
+
+.textoCtt2Mobi{
+    color: #60316e;
+    font-size: 16px;
+    line-height: 2;
+}
+.ImgMailMobi{
+    width: 50px;
+}
+.emailGeralMobile{
+    margin-left: -70px;
+}
