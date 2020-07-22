@@ -20,6 +20,13 @@
 
 
 /* mobile */
+.TopoMarginM{
+    margin-top: 35px;
+}
+.TopoMargin2M{
+    margin-top: 35px;
+    text-align: end;
+}
 .tamanhoCttMobile{
     max-width: 400px;
     margin-top: 25px;

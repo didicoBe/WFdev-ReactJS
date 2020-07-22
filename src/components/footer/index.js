@@ -25,10 +25,18 @@ export default class Footer extends Component {
             
             <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text >
-                    <FontAwesomeIcon icon={faFacebook} color="white" fontSize="35px"  className="redesocial" />
-                    <FontAwesomeIcon icon={faBehance} color="white" fontSize="35px"  className="redesocial" />
-                    <FontAwesomeIcon icon={faLinkedin} color="white" fontSize="35px"  className="redesocial" />
-                    <FontAwesomeIcon icon={faGithub} color="white" fontSize="35px"  className="redesocial" />
+                    <a target="_blank" href="https://www.facebook.com/wfdesenvolvimento/">
+                        <FontAwesomeIcon icon={faFacebook} color="white" fontSize="35px"  className="redesocial" />
+                    </a> 
+                    <a target="_blank" href="https://www.behance.net/didico">
+                        <FontAwesomeIcon icon={faBehance} color="white" fontSize="35px"  className="redesocial" />
+                    </a>                    
+                    <a target="_blank" href="https://www.linkedin.com/in/waldir-bertuqui-neto/">
+                        <FontAwesomeIcon icon={faLinkedin} color="white" fontSize="35px"  className="redesocial" />
+                    </a>
+                    <a target="_blank" href="https://github.com/didicoBe">
+                        <FontAwesomeIcon icon={faGithub} color="white" fontSize="35px"  className="redesocial" />
+                    </a>                    
                 </Navbar.Text>
             </Navbar.Collapse>
             

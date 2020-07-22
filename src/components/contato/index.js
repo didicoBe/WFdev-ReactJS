@@ -69,20 +69,14 @@ export default class Contato extends Component {
         <Container className="d-xs-block d-lg-none">
         
                 
-                    <Row>
-                        <div className="Titulos">{"</Contato>"}</div>
-                        <div className="tamanhoCttMobile">
-                            <Lottie
-                                options={{
-                                animationData: animation
-                                }}
-                            />
-                        </div>
-                    </Row>
-                 
+                   
+                                
                 
-
-                    <Row className="TopoMargin">
+                    <Row>
+                    <div className="Titulos">{"</Contato>"}</div>
+                    </Row>
+                    <Row className="TopoMarginM">
+                        
                        <Col xs={4}>
                         <Image
                             src='/img/mail.png'
@@ -100,21 +94,34 @@ export default class Contato extends Component {
                     </Row>
                     
                     
-                    <Row className="TopoMargin2">
-                       <Col style={{marginRight:'-260px'}}>
+                    <Row className="TopoMargin2M">
+                       <Col style={{marginRight:'-80px'}} xs={8}>
                         <div className="textoCtt1Mobi">click para enviar um Zap</div>
-                        <div className="textoCtt2Mobi">+55(11)99263-8184</div>
-                        <div className="textoCtt2Mobi">+55(11)99263-8184</div>
+                        <div className="textoCtt2Mobi"><a target="_blank" href="https://wa.me/5511992638184?text=Ola%20Gostaria%20de%20informações%20sobre%20sites">+55(11)99263-8184</a></div>
+                        <div className="textoCtt2Mobi"><a target="_blank" href="https://wa.me/5511959164987?text=Ola%20Gostaria%20de%20informações%20sobre%20sites">+55(11)95916-4987</a></div>
                        </Col>
-                       <Col>
-                        <Image
-                            src='/img/whatsapp-brands.png'
-                            alt="whats"
-                            fluid
-                            className="ImgMailMobi"
-                            
-                        />
+                       <Col xs={4}>
+                        <a target="_blank" href="https://wa.me/5511992638184?text=Ola%20Gostaria%20de%20informações%20sobre%20sites">
+                            <Image
+                                src='/img/whatsapp-brands.png'
+                                alt="whats"
+                                fluid
+                                className="ImgMailMobi"
+                                
+                            />
+                        </a>
+                        
                        </Col>
+                    </Row>
+                    <Row>
+                        
+                        <div className="tamanhoCttMobile">
+                            <Lottie
+                                options={{
+                                animationData: animation
+                                }}
+                            />
+                        </div>
                     </Row>
                     
             

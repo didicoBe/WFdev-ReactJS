@@ -1,0 +1,78 @@
+
+@font-face {
+    font-family: 'OCR-ABT';
+    src: local('OCR-ABT'), url(../../font/OCR-ABT.ttf) format('truetype');
+  }
+.apps{
+    font-family: 'OCR-ABT';
+}
+.apps .modal-content{
+    border: 3px solid #eb7ba1;
+    border-radius: 10px;
+
+}
+
+.apps .modal-content .modal-footer .btn-primary{
+    background-color: #eb7ba1;
+    border-color: #eb7ba1;
+}
+.apps .modal-header .close{
+    color:#eb7ba1
+}
+
+
+.SErvicosites{
+    font-family: 'OCR-ABT';
+}
+.SErvicosites .modal-content{
+    border: 3px solid #5f2252;
+    border-radius: 10px;
+
+}
+
+.SErvicosites .modal-content .modal-footer .btn-primary{
+    background-color: #5f2252;
+    border-color: #5f2252;
+}
+.SErvicosites .modal-header .close{
+    color:#5f2252
+}
+
+
+
+.ServicoLoja{
+    font-family: 'OCR-ABT';
+}
+.ServicoLoja .modal-content{
+    border: 3px solid #ab5298;
+    border-radius: 10px;
+
+}
+
+.ServicoLoja .modal-content .modal-footer .btn-primary{
+    background-color: #ab5298;
+    border-color: #ab5298;
+}
+.ServicoLoja .modal-header .close{
+    color:#ab5298
+}
+
+
+
+
+.Servicosoft{
+    font-family: 'OCR-ABT';
+}
+.Servicosoft .modal-content{
+    border: 3px solid #d44777;
+    border-radius: 10px;
+
+}
+
+.Servicosoft .modal-content .modal-footer .btn-primary{
+    background-color: #d44777;
+    border-color: #d44777;
+}
+.Servicosoft .modal-header .close{
+    color:#d44777
+}
