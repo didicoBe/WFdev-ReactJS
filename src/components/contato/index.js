@@ -95,7 +95,7 @@ export default class Contato extends Component {
                     
                     
                     <Row className="TopoMargin2M">
-                       <Col style={{marginRight:'-80px'}} xs={8}>
+                       <Col style={{position:'relative',left:'65px'}} xs={8}>
                         <div className="textoCtt1Mobi">click para enviar um Zap</div>
                         <div className="textoCtt2Mobi"><a target="_blank" href="https://wa.me/5511992638184?text=Ola%20Gostaria%20de%20informações%20sobre%20sites">+55(11)99263-8184</a></div>
                         <div className="textoCtt2Mobi"><a target="_blank" href="https://wa.me/5511959164987?text=Ola%20Gostaria%20de%20informações%20sobre%20sites">+55(11)95916-4987</a></div>

@@ -5,14 +5,32 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import './style.css';
 
 export default class Topo extends Component {
+
+  
+  state = {navExpanded: false};
+
   scrollToTop = () => {
     scroll.scrollToTop();
   };
+
+  
+
+  setNavExpanded() {
+    this.setState({ navExpanded: true });
+  }
+
+  closeNav() {
+    this.setState({ navExpanded: false });
+    console.log(this.state.navExpanded)
+  }
   render() {
     
     return (
       <div> 
-          <Navbar bg="fundoTopo" className="fundoTopo" expand="lg" fixed="top">
+          <Navbar bg="fundoTopo" className="fundoTopo" expand="lg" fixed="top" 
+          onToggle={()=>{this.setNavExpanded()}}
+          expanded={this.state.navExpanded}
+          >
             <Navbar.Brand href="#home">
              <div className="logo">
                 <Image 
@@ -33,7 +51,7 @@ export default class Topo extends Component {
             
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav " className="flex-row-reverse">
+            <Navbar.Collapse id="basic-navbar-nav" className="flex-row-reverse">
                 <Nav className="mr-5">
                
                     <Nav className="linkTopo">
@@ -44,6 +62,7 @@ export default class Topo extends Component {
                         smooth={true}
                         offset={-140}
                         duration={500}
+                        onClick={()=>{this.closeNav()}}
                           >Home</Link>
                     </Nav>
                 
@@ -55,6 +74,7 @@ export default class Topo extends Component {
                         smooth={true}
                         offset={-140}
                         duration={500}
+                        onClick={()=>{this.closeNav()}} 
                           >Sobre</Link>
                     </Nav>
                     <Nav className="linkTopo">
@@ -65,6 +85,7 @@ export default class Topo extends Component {
                             smooth={true}
                             offset={-140}
                             duration={500}
+                            onClick={()=>{this.closeNav()}}
                         >
                         Servicos
                         </Link>
@@ -77,6 +98,7 @@ export default class Topo extends Component {
                         smooth={true}
                         offset={-140}
                         duration={500}
+                        onClick={()=>{this.closeNav()}}
                         >Orcamento</Link>
                       </Nav>
                     <Nav className="linkTopo">
@@ -87,6 +109,7 @@ export default class Topo extends Component {
                         smooth={true}
                         offset={-140}
                         duration={500}
+                        onClick={()=>{this.closeNav()}}
                           >Contato</Link>                          
                     </Nav>
                 </Nav>
