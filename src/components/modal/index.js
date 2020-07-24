@@ -1,11 +1,39 @@
 import React, { Component } from 'react';
-import { Modal,Button } from "react-bootstrap";
+import { Modal,Button, Row, Col,  } from "react-bootstrap";
+import Lottie from 'lottie-react-web';
+import animation from '../../animations/software.json'
+import animation2 from '../../animations/app.json'
+import animation3 from '../../animations/loja.json'
+import animation4 from '../../animations/site.json'
 
 
 import "./style.css"
 
 
 export default class MinhaModal extends Component {
+  
+  animacao = ()=>{
+      switch (this.props.anima) {
+        case 'animation':
+            return animation
+            break;
+        case 'animation2':
+            return animation2
+            break;
+        case 'animation3':
+            return animation3
+            break;
+        case 'animation4':
+            return animation4
+            break;
+
+        default:
+            return ''
+            break;
+      }
+  }
+  
+
   
   render() {
 
@@ -24,9 +52,23 @@ export default class MinhaModal extends Component {
             </Modal.Header>
             <Modal.Body>
                 <h4>{this.props.subtitulo}</h4>
-                <p>
-                    {this.props.descricao}
-                </p>
+                <Row>
+                    <Col>
+                        <p>
+                            {this.props.descricao}
+                        </p>
+                    </Col>
+                    <Col>
+                        <div>
+                            <Lottie
+                                options={{
+                                animationData: this.animacao()
+                                }}
+                            />
+                        </div>
+                    </Col>
+                </Row>
+                
             </Modal.Body>
             <Modal.Footer>
                 <Button  onClick={this.props.onHide}>Fechar</Button>

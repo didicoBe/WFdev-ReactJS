@@ -15,6 +15,8 @@ import Orcamento from "./components/orcamento";
 import Contato from "./components/contato";
 import Footer from "./components/footer";
 
+import Exemplo from "./components/contato/exemplo";
+
 
 
 function App() {

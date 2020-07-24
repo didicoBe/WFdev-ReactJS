@@ -12,17 +12,20 @@ export default class Proj extends Component {
         titulo:'',
         subtitulo:'',
         descricao:'',
-        cor:''
+        cor:'',
+        anima:''
     }
 
 
-    Modal = (titulo,subtitulo,descricao,cor)=>{
+    Modal = (titulo,subtitulo,descricao,cor, animacao)=>{
         this.setState({
                         modalShow:true,
                         titulo:titulo,
                         subtitulo:subtitulo,
                         descricao:descricao,
-                        cor:cor
+                        cor:cor,
+                        anima: animacao
+
                      })
     }
 
@@ -41,6 +44,7 @@ export default class Proj extends Component {
                         cor={this.state.cor}
                         show={this.state.modalShow}
                         onHide={() => this.setState({modalShow:false})}
+                        anima={this.state.anima}
                         />
                     <Row>
                         
@@ -62,25 +66,25 @@ export default class Proj extends Component {
                                 <div className="appmobile">
                                     <h5>Aplicativos Mobile</h5>
                                     <Image className="imgCx" src="/img/aplicativosMobile.png" fluid />
-                                    <Button variant="primary" className="btnCx" onClick={()=>{this.Modal('Aplicativos Mobile','Você não vai ficar fora dessa né?','Tenha o seu aplicativo na google play ou na apple store, multiplique suas vendas, esteja mais proximo do seu cliente.','apps')}}>ver mais</Button>
+                                    <Button variant="primary" className="btnCx" onClick={()=>{this.Modal('Aplicativos Mobile','Você não vai ficar fora dessa né?','Tenha o seu aplicativo na google play ou na apple store, multiplique suas vendas, esteja mais proximo do seu cliente.','apps','animation2')}}>ver mais</Button>
                                 </div>
                                 <div className="sites">
                                     <h5>Sites</h5>
                                     <Image className="imgCx" src="/img/site.png" fluid />
                                     <Button variant="primary" className="btnCxSite" onClick={()=>{this.Modal('Sites','Sua empresa precisa ter a sua cara',`Desenvolvemos sites para divulgação do seu produto ou prestação de serviço e dessa forma possa te auxiliar a atingir seu público alvo.
-Ter um site bem estruturado passa mais credibilidade e facilita a comunicação entre você e seu cliente.`,'SErvicosites')}}>ver mais</Button>
+Ter um site bem estruturado passa mais credibilidade e facilita a comunicação entre você e seu cliente.`,'SErvicosites','animation4')}}>ver mais</Button>
                                 </div>
                             </Row>
                             <Row className="linha2">
                                 <div className="lojaVirtual">
                                         <h5>Lojas Virtuais</h5>
                                         <Image className="imgCx" src="/img/lojaVirtual.png" fluid />
-                                        <Button variant="primary" className="btnCxLoja" onClick={()=>{this.Modal('Lojas Virtuais','Venda muito mais com muito menos',`Temos a solução completa para a criação de sua loja virtual de forma organizada e interligada a diversas formas de pagamento. Hoje em dia a venda de produtos e serviços de forma virtual é a maneira mais eficiente e barata de divulgação. Invista em uma loja virtual e alavanque suas vendas.`,'ServicoLoja')}}>ver mais</Button>
+                                        <Button variant="primary" className="btnCxLoja" onClick={()=>{this.Modal('Lojas Virtuais','Venda muito mais com muito menos',`Temos a solução completa para a criação de sua loja virtual de forma organizada e interligada a diversas formas de pagamento. Hoje em dia a venda de produtos e serviços de forma virtual é a maneira mais eficiente e barata de divulgação. Invista em uma loja virtual e alavanque suas vendas.`,'ServicoLoja','animation3')}}>ver mais</Button>
                                     </div>
                                     <div className="sis">
                                         <h5>Softwares e <br/>Integrações</h5>
                                         <Image className="imgCx" src="/img/sis.png" fluid />
-                                        <Button variant="primary" className="btnCxSis" onClick={()=>{this.Modal('Softwares e Integrações','Faça seus sistemas se conversarem, aumente sua produtividade',`Nossa empresa tem grande experiência no desenvolvimento de softwares proprietários, personalizado e integrações com diversas plataformas Amazon, Google, Oracle e etc. Integração e desenvolvimento em qualquer plataforma.`,'Servicosoft')}}>ver mais</Button>
+                                        <Button variant="primary" className="btnCxSis" onClick={()=>{this.Modal('Softwares e Integrações','Faça seus sistemas se conversarem, aumente sua produtividade',`Nossa empresa tem grande experiência no desenvolvimento de softwares proprietários, personalizado e integrações com diversas plataformas Amazon, Google, Oracle e etc. Integração e desenvolvimento em qualquer plataforma.`,'Servicosoft','animation')}}>ver mais</Button>
                                 </div>
                             </Row>
                         </Col>
@@ -110,25 +114,25 @@ Ter um site bem estruturado passa mais credibilidade e facilita a comunicação 
                             <div className="appmobileM">
                                 <h6>Aplicativos Mobile</h6>
                                 <Image className="imgCx" src="/img/aplicativosMobile.png" fluid />
-                                <Button variant="primary" className="btnCx" onClick={()=>{this.Modal('Aplicativos Mobile','Você não vai ficar fora dessa né?','Tenha o seu aplicativo na google play ou na apple store, multiplique suas vendas, esteja mais proximo do seu cliente.','apps')}}>ver mais</Button>
+                                <Button variant="primary" className="btnCx" onClick={()=>{this.Modal('Aplicativos Mobile','Você não vai ficar fora dessa né?','Tenha o seu aplicativo na google play ou na apple store, multiplique suas vendas, esteja mais proximo do seu cliente.','apps','animation2')}}>ver mais</Button>
                             </div>
                             <div className="sitesM">
                                 <h5>Sites</h5>
                                 <Image className="imgCx" src="/img/site.png" fluid />
                                 <Button variant="primary" className="btnCxSite" onClick={()=>{this.Modal('Sites','Sua empresa precisa ter a sua cara',`Desenvolvemos sites para divulgação do seu produto ou prestação de serviço e dessa forma possa te auxiliar a atingir seu público alvo.
-Ter um site bem estruturado passa mais credibilidade e facilita a comunicação entre você e seu cliente.`,'SErvicosites')}}>ver mais</Button>
+Ter um site bem estruturado passa mais credibilidade e facilita a comunicação entre você e seu cliente.`,'SErvicosites','animation4')}}>ver mais</Button>
                             </div>
                         
                         
                             <div className="lojaVirtualM">
                                     <h6>Lojas Virtuais</h6>
                                     <Image className="imgCx" src="/img/lojaVirtual.png" fluid />
-                                    <Button variant="primary" className="btnCxLoja" onClick={()=>{this.Modal('Lojas Virtuais','Venda muito mais com muito menos',`Temos a solução completa para a criação de sua loja virtual de forma organizada e interligada a diversas formas de pagamento. Hoje em dia a venda de produtos e serviços de forma virtual é a maneira mais eficiente e barata de divulgação. Invista em uma loja virtual e alavanque suas vendas.`,'ServicoLoja')}}>ver mais</Button>
+                                    <Button variant="primary" className="btnCxLoja" onClick={()=>{this.Modal('Lojas Virtuais','Venda muito mais com muito menos',`Temos a solução completa para a criação de sua loja virtual de forma organizada e interligada a diversas formas de pagamento. Hoje em dia a venda de produtos e serviços de forma virtual é a maneira mais eficiente e barata de divulgação. Invista em uma loja virtual e alavanque suas vendas.`,'ServicoLoja','animation3')}}>ver mais</Button>
                                 </div>
                                 <div className="sisM">
                                     <h5>Softwares e <br/>Integrações</h5>
                                     <Image className="imgCx" src="/img/sis.png" fluid />
-                                    <Button variant="primary" className="btnCxSis" onClick={()=>{this.Modal('Softwares e Integrações','Faça seus sistemas se conversarem, aumente sua produtividade',`Nossa empresa tem grande experiência no desenvolvimento de softwares proprietários, personalizado e integrações com diversas plataformas Amazon, Google, Oracle e etc. Integração e desenvolvimento em qualquer plataforma.`,'Servicosoft')}}>ver mais</Button>
+                                    <Button variant="primary" className="btnCxSis" onClick={()=>{this.Modal('Softwares e Integrações','Faça seus sistemas se conversarem, aumente sua produtividade',`Nossa empresa tem grande experiência no desenvolvimento de softwares proprietários, personalizado e integrações com diversas plataformas Amazon, Google, Oracle e etc. Integração e desenvolvimento em qualquer plataforma.`,'Servicosoft','animation')}}>ver mais</Button>
                             </div>
                             
                         </Col>
