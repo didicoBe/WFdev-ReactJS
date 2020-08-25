@@ -15,14 +15,22 @@ export default class Topo extends Component {
 
   
 
-  setNavExpanded() {
+  setNavExpanded = ()=> {
     this.setState({ navExpanded: true });
   }
 
-  closeNav() {
+  closeNav= ()=> {
     this.setState({ navExpanded: false });
-    console.log(this.state.navExpanded)
   }
+
+
+  componentDidMount(){
+    document.body.addEventListener('click', this.closeNav);
+  }
+
+
+
+
   render() {
     
     return (
@@ -112,6 +120,13 @@ export default class Topo extends Component {
                         onClick={()=>{this.closeNav()}}
                           >Contato</Link>                          
                     </Nav>
+                    <Nav className="linkTopo">
+                      <a style={{textDecoration:'none'}}
+                        href ="http://user.wfdesenvolvimento.com.br"
+                        onClick={()=>{this.closeNav()}}
+                          >Login</a>                          
+                    </Nav>
+
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
